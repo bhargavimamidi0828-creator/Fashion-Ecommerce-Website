@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fashion Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Fashion Store</h1>
+
+<!-- SEARCH -->
+<form action="/search" method="post">
+    <input type="text" name="query" placeholder="Search products">
+    <button type="submit">Search</button>
+</form>
+
+<!-- CATEGORY FILTER -->
+<div>
+    <a href="/">All</a>
+    <a href="/category/top">Tops</a>
+    <a href="/category/bottom">Bottoms</a>
+    <a href="/category/footwear">Footwear</a>
+</div>
+
+<h2>Products</h2>
+
+{% for p in products %}
+<div class="card">
+    <h3>{{p.name}}</h3>
+    <p>₹{{p.price}}</p>
+    <a href="/product/{{p.id}}">View</a>
+    <a href="/add/{{p.id}}">Add to Cart</a>
+</div>
+{% endfor %}
+
+<!-- RECOMMENDATION -->
+{% if recs %}
+<h2>People also like</h2>
+{% for r in recs %}
+<div class="card">
+    <h3>{{r.name}}</h3>
+    <p>₹{{r.price}}</p>
+</div>
+{% endfor %}
+{% endif %}
+
+<br>
+<a href="/cart">Go to Cart</a>
+
+</body>
+</html>
