@@ -1,71 +1,77 @@
-# 🛒 Fashion Store with Recommendation
+# 🛍 Fashion E-Commerce Website
 
-A simple fashion e-commerce web application built using Flask.  
-It allows users to browse products, add items to cart, search products, and get basic recommendations.
+## 📌 Overview
 
----
-
-## 🚀 Features
-
-- 🛍️ Product Listing
-- 🛒 Add to Cart
-- 🔍 Search Functionality
-- 📂 Category Filtering
-- ⭐ "People also like" Recommendation
+This project is a simple and user-friendly **Fashion E-Commerce Website** developed to demonstrate the core functionalities of an online shopping platform. It provides a smooth shopping experience with a clean and responsive user interface.
 
 ---
 
-## 🛠️ Tech Stack
+## 🎯 Features
 
-- Python
-- Flask
-- HTML
-- CSS
-- JavaScript
-- MySQL (optional / extendable)
-
----
-
-## 📁 Project Structure
-project/
-│── app.py
-│── templates/
-│ ├── home.html
-│ ├── cart.html
-│── static/
-│ ├── style.css
-## ▶️ How to Run
-
-1. Clone the repository:
-git clone:https://github.com/bhargavimamidi0828-creator/Fashion-Ecommerce-Website
-
-2. Install Flask:
-pip install flask
-
-3. Run the app:
-python app.py
-
-4. Open browser:
+* 🏠 Home page with product listings
+* 🛒 Add to Cart functionality
+* ❤️ Wishlist (basic UI feature)
+* 🧾 Product details display
+* 💸 Discount highlights on products
+* 🔢 Cart item count indicator
+* 📱 Fully responsive design (mobile-friendly)
 
 ---
 
-## 💡 Future Improvements
+## 🛠 Tech Stack
 
-- User login system
-- Wishlist feature
-- Payment integration
-- Advanced recommendation system
+* **Frontend:** HTML, CSS, JavaScript
+* **Storage:** LocalStorage (for cart data)
+* **Design:** Responsive UI with modern styling
 
 ---
 
-## 📸 Screenshots
+## 📂 Project Structure
 
-(Add screenshots here after running project)
+fashion-store/
+│── index.html
+│── product.html
+│── cart.html
+│── css/
+│   └── style.css
+│── js/
+│   └── script.js
+│── images/
+
+---
+
+## ⚙️ How to Run
+
+1. Download or clone the project
+2. Open the folder
+3. Run `index.html` in any browser
+
+---
+
+## 💡 Key Highlights
+
+* Clean and intuitive UI design
+* Smooth navigation between pages
+* Lightweight and fast loading
+* Beginner-friendly implementation
+
+---
+
+## 🚀 Future Enhancements
+
+* User authentication (Login/Signup)
+* Payment gateway integration
+* Order tracking system
+* AI-based product recommendations
 
 ---
 
 ## 👩‍💻 Author
 
-Mamidi Bhargavi
+m.bhargavi
 
+---
 
+## 📜 License
+
+This project is for educational purposes only.
